@@ -1,0 +1,30 @@
+1.Select * from employees;
+
+2.select first_name,last_name from employees;
+
+3.select employee_id,first_name,last_name,email,phone_number,hire_date,job_id,manager_id,department_id,round(salary,0) as salary from employees where salary>50000;
+
+4.Select avg(salary) as avgsal from employees;
+
+5.Select count(distinct city) from locations;
+
+6.Select * from departments where department_name ='IT';
+
+7.Select salary from emp_details_view order by salary desc limit 5;
+  Select salary from emp_details_view order by salary asc limit 5;
+
+8.Select * from emp_details_view where region_name ='Europe' and department_name ='Sales';
+
+9.Select * from emp_details_view where commission_pct is not null;
+
+10.Select department_name,sum(salary) as totalsalary from emp_details_view group by department_name;
+
+11.Select city,sum(commission_pct) as totalcommission from emp_details_view group by city;
+
+12.Select department_name,max(salary) as max_salary,min(salary) as min_salary from emp_details_view group by department_name;
+
+13.Select * from emp_details_view order by salary desc limit 10;
+
+14.Select city,salary from emp_details_view group by city;
+
+15.Select department_name,salary from emp_details_view  order by salary desc;
